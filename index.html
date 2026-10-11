@@ -1,0 +1,484 @@
+
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Para mi princesa Paola ❤️</title>
+
+<style>
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: 'Segoe UI', sans-serif;
+    background: linear-gradient(135deg, #ffe1eb, #fff0f5, #ffd1dc);
+    color: #70213b;
+    text-align: center;
+    overflow-x: hidden;
+}
+
+header {
+    min-height: 85vh;
+    padding: 80px 20px 50px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+h1 {
+    font-size: clamp(2.2rem, 7vw, 4rem);
+    color: #e63970;
+    margin-bottom: 25px;
+    animation: aparecer 1.5s ease;
+}
+
+header p {
+    font-size: 1.1rem;
+    line-height: 1.9;
+    max-width: 650px;
+}
+
+button {
+    background: #e63970;
+    color: white;
+    border: none;
+    padding: 14px 26px;
+    border-radius: 30px;
+    font-size: 1rem;
+    cursor: pointer;
+    margin: 20px 5px;
+    transition: 0.3s;
+    box-shadow: 0 5px 15px #e6397040;
+}
+
+button:hover {
+    background: #b91d50;
+    transform: scale(1.06);
+}
+
+section {
+    padding: 45px 20px;
+}
+
+h2 {
+    font-size: clamp(1.5rem, 5vw, 2rem);
+    margin-bottom: 22px;
+    color: #d62960;
+}
+
+.tarjeta {
+    background: rgba(255, 255, 255, 0.85);
+    padding: 28px;
+    margin: 25px auto;
+    max-width: 680px;
+    border-radius: 25px;
+    box-shadow: 0 8px 25px #b83b6020;
+    line-height: 1.9;
+    border: 1px solid #ffffff;
+}
+
+.fotos {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    flex-wrap: wrap;
+    max-width: 900px;
+    margin: 25px auto;
+}
+
+.fotos img {
+    width: min(100%, 320px);
+    height: 380px;
+    object-fit: cover;
+    object-position: center;
+    border-radius: 22px;
+    box-shadow: 0 8px 20px #b83b6030;
+    transition: transform 0.4s;
+}
+
+.fotos img:hover {
+    transform: scale(1.03) rotate(-1deg);
+}
+
+#carta {
+    display: none;
+    animation: aparecer 1s ease;
+}
+
+#respuesta {
+    color: #e63970;
+    font-size: 1.1rem;
+    margin-top: 15px;
+}
+
+footer {
+    padding: 35px 15px;
+    background: #f8b4c8;
+    line-height: 2;
+    margin-top: 30px;
+}
+
+.corazon {
+    position: fixed;
+    bottom: -40px;
+    animation: flotar linear forwards;
+    pointer-events: none;
+    z-index: 100;
+}
+
+@keyframes flotar {
+    0% {
+        transform: translateY(0) rotate(0deg);
+        opacity: 1;
+    }
+
+    100% {
+        transform: translateY(-110vh) rotate(360deg);
+        opacity: 0;
+    }
+}
+
+@keyframes aparecer {
+    from {
+        opacity: 0;
+        transform: translateY(25px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@media (max-width: 600px) {
+    header {
+        min-height: 75vh;
+        padding: 50px 18px;
+    }
+
+    section {
+        padding: 35px 15px;
+    }
+
+    .tarjeta {
+        padding: 22px 18px;
+    }
+
+    .fotos img {
+        height: 330px;
+    }
+}
+
+@media (prefers-reduced-motion: reduce) {
+    *, *::before, *::after {
+        scroll-behavior: auto !important;
+        animation-duration: 0.01ms !important;
+        transition-duration: 0.01ms !important;
+    }
+}
+</style>
+</head>
+
+<body>
+
+<header>
+    <h1>Para mi princesa Paola ❤️</h1>
+
+    <p>
+        Hice esta pequeña página especialmente para ti,
+        para recordarte lo importante que eres en mi vida.
+        <br>
+        Eres una de las cosas más bonitas que me han pasado.
+        <br>
+        <strong>Te quiero muchísimo, mi amor. 💖🥹</strong>
+    </p>
+
+    <button onclick="mostrarCarta()">
+        💌 Abre tu sorpresa
+    </button>
+
+    <p style="margin-top: 25px;">
+        ↓ Un pequeño mundo hecho para nosotros ↓
+    </p>
+</header>
+
+<section>
+    <h2>💗 ¿Sabes por qué eres tan especial?</h2>
+
+    <div class="tarjeta">
+        Porque tu sonrisa puede mejorar mi día,
+        tu voz puede darme tranquilidad y tu presencia
+        hace que los momentos más sencillos se conviertan
+        en recuerdos hermosos.
+
+        <br><br>
+
+        No necesito que todo sea perfecto.
+        Quiero seguir compartiendo momentos bonitos contigo,
+        apoyarte en tus días difíciles y celebrar tus alegrías.
+
+        <br><br>
+
+        Si pudiera elegir nuevamente, me encantaría
+        volver a conocerte y vivir esta bonita historia contigo.
+
+        <br><br>
+
+        <strong>
+            Eres mi persona especial, Paola. ❤️🌹
+        </strong>
+    </div>
+</section>
+
+<section>
+    <h2>📸 Nuestros recuerdos</h2>
+
+    <p>
+        Dos fotitos para guardar momentos especiales
+        de nuestra historia. 💕
+    </p>
+
+    <div class="fotos">
+
+        <img
+            src="img/imagen1.jpeg"
+            alt="Nuestro recuerdo especial número uno"
+            loading="lazy">
+
+        <img
+            src="img/imagen2.jpeg"
+            alt="Nuestro recuerdo especial número dos"
+            loading="lazy">
+
+    </div>
+
+    <div class="tarjeta">
+        Mi parte favorita de los recuerdos
+        es que quiero seguir creando muchos más contigo.
+
+        <br><br>
+
+        Quiero que tengamos nuevas aventuras,
+        nuevas fotografías y miles de motivos para sonreír.
+
+        <br>
+
+        <strong>Lo bonito apenas continúa. 💖</strong>
+    </div>
+</section>
+
+<section>
+    <h2>💌 Una cartita para ti</h2>
+
+    <p>
+        Hay algo que quiero decirte desde el corazón.
+    </p>
+
+    <button onclick="mostrarCarta()">
+        ❤️ Leer mi carta de amor
+    </button>
+
+    <div class="tarjeta" id="carta">
+
+        <h2>Mi querida Paola ❤️</h2>
+
+        <p>
+            Mi amor, quizá no siempre encuentre las palabras
+            perfectas para explicarte todo lo que siento,
+            pero hoy quiero recordarte cuánto significas para mí.
+
+            <br><br>
+
+            Desde que formas parte de mi vida,
+            hay momentos que se sienten más bonitos
+            simplemente porque puedo compartirlos contigo.
+
+            <br><br>
+
+            Me encanta pensar en todas las cosas que todavía
+            nos quedan por vivir, en las risas que nos faltan,
+            los lugares que podemos conocer y los recuerdos
+            que algún día miraremos juntos.
+
+            <br><br>
+
+            No te prometo una historia sin dificultades,
+            pero sí quiero esforzarme por cuidarte,
+            escucharte, respetarte y demostrarte mi cariño
+            con hechos y no solamente con palabras.
+
+            <br><br>
+
+            Gracias por ser tú, por tus detalles,
+            por tus sonrisas y por cada momento bonito.
+
+            <br><br>
+
+            Si algún día dudas de lo especial que eres,
+            recuerda que hay alguien que hizo esta pequeña
+            página pensando en ti y queriendo sacarte una sonrisa.
+
+            <br><br>
+
+            <strong>
+                Te quiero muchísimo, mi princesa Paola. 💖🌹
+            </strong>
+
+            <br><br>
+
+            Con todo mi amor,
+
+            <br>
+
+            <strong>Tu enamorado, que te quiere mucho. ❤️</strong>
+        </p>
+
+    </div>
+</section>
+
+<section>
+    <div class="tarjeta">
+
+        <h2>🌹 Una pregunta para ti...</h2>
+
+        <p>
+            Mi princesa Paola, ¿quieres que sigamos creando
+            muchos más recuerdos bonitos juntos #14-07-26? 🥹💕
+        </p>
+
+        <button onclick="respuestaSi()">
+            ¡Siii, mi amor! ❤️
+        </button>
+
+        <button onclick="respuestaOtra()">
+            Dame otro besito 😘
+        </button>
+
+        <p id="respuesta"></p>
+
+    </div>
+</section>
+
+<section>
+    <h2>💖 Un último mensajito</h2>
+
+    <div class="tarjeta">
+        <p>
+            No importa cuántas fotografías tengamos
+            ni cuántas páginas pueda escribir.
+
+            <br><br>
+
+            Lo que más deseo es que podamos seguir
+            construyendo recuerdos que nos hagan felices.
+
+            <br><br>
+
+            <strong>
+                Esta página es pequeña,
+                pero el cariño con el que la hice para ti es enorme.
+            </strong>
+
+            <br><br>
+
+            Te quiero, Paola. ❤️♾️
+        </p>
+
+        <button onclick="lluviaDeCorazones()">
+            💕 Enviar lluvia de amor
+        </button>
+    </div>
+</section>
+
+<footer>
+    <p>Hecho especialmente para mi princesa Paola ❤️</p>
+    <p>Con mucho cariño, de tu enamorado. 💌</p>
+    <p>💕 Hoy, mañana y en los recuerdos que nos faltan. 💕</p>
+</footer>
+
+<script>
+function mostrarCarta() {
+    const carta = document.getElementById("carta");
+
+    carta.style.display = "block";
+
+    carta.scrollIntoView({
+        behavior: "smooth",
+        block: "center"
+    });
+
+    lluviaDeCorazones();
+}
+
+function respuestaSi() {
+    document.getElementById("respuesta").textContent =
+        "¡Siii! ❤️ Entonces sigamos escribiendo nuestra historia, mi princesa. Te mando miles de besitos. 😘💖";
+
+    lluviaDeCorazones();
+}
+
+function respuestaOtra() {
+    document.getElementById("respuesta").textContent =
+        "¡Muak, muak! 😘💋 Un besito para mi Paola hermosa. ¡Y otro más! ❤️";
+
+    lluviaDeCorazones();
+}
+
+function lluviaDeCorazones() {
+    const emojis = ["❤️", "💖", "💕", "💗", "💘", "🌹"];
+
+    for (let i = 0; i < 30; i++) {
+        const corazon = document.createElement("span");
+
+        corazon.className = "corazon";
+
+        corazon.textContent =
+            emojis[Math.floor(Math.random() * emojis.length)];
+
+        corazon.style.left = Math.random() * 100 + "vw";
+
+        corazon.style.fontSize =
+            (18 + Math.random() * 25) + "px";
+
+        corazon.style.animationDuration =
+            (3 + Math.random() * 3) + "s";
+
+        document.body.appendChild(corazon);
+
+        setTimeout(function() {
+            corazon.remove();
+        }, 6500);
+    }
+}
+
+// Corazones pequeños que flotan por la página.
+setInterval(function() {
+    const corazon = document.createElement("span");
+
+    corazon.className = "corazon";
+    corazon.textContent = "💗";
+    corazon.style.left = Math.random() * 100 + "vw";
+    corazon.style.fontSize = "20px";
+    corazon.style.animationDuration = "6s";
+
+    document.body.appendChild(corazon);
+
+    setTimeout(function() {
+        corazon.remove();
+    }, 6000);
+}, 1200);
+</script>
+
+</body>
+</html>
